@@ -1,0 +1,63 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# Build artifacts in src/ (should only exist in dist/)
+packages/*/src/**/*.js
+packages/*/src/**/*.js.map
+packages/*/src/**/*.d.ts.map
+apps/*/src/**/*.js
+apps/*/src/**/*.js.map
+apps/*/src/**/*.d.ts.map
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Database (local runtime data)
+*.db
+*.db-wal
+*.db-shm
+data/
+
+# Blob storage (local runtime data)
+.forgemcp/
+
+# Debug
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage/
+
+# Secrets — NEVER commit
+.env
+.env.*
+*.key
+*.pem
+credentials.*
+secrets.*
+
+# Research/internal docs — do not publish
+*.prompt.md
+*_prompt.md
+*_research.md
+mega_prompt*
+docs/
+packages/policy/
+packages/search-federation/
+.gitfilters/
+demo/

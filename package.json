@@ -1,0 +1,51 @@
+{
+  "name": "geniusmcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Code Intelligence OS for AI Agents — persistent memory, GitHub intelligence, structural search",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "code-search",
+    "ai-agent",
+    "code-intelligence",
+    "github",
+    "claude",
+    "cursor",
+    "memory",
+    "archetype",
+    "provenance",
+    "ast",
+    "winnowing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geniussigmaskibidi-gif/geniusmcp"
+  },
+  "homepage": "https://github.com/geniussigmaskibidi-gif/geniusmcp#readme",
+  "bugs": {
+    "url": "https://github.com/geniussigmaskibidi-gif/geniusmcp/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo run dev --parallel",
+    "start": "node apps/mcp-server/dist/index.js"
+  },
+  "devDependencies": {
+    "@ast-grep/napi": "^0.42.0",
+    "@types/node": "^22.0.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}

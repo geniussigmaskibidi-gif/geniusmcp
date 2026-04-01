@@ -1,0 +1,28 @@
+{
+  "name": "@forgemcp/repo-memory",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./capsule-builder": {
+      "types": "./dist/capsule-builder.d.ts",
+      "import": "./dist/capsule-builder.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@forgemcp/core": "workspace:*",
+    "@forgemcp/db": "workspace:*",
+    "@forgemcp/ast-intelligence": "workspace:*"
+  }
+}

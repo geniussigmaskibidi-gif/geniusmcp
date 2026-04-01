@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "geniusmcp": {
+      "command": "node",
+      "args": ["./apps/mcp-server/dist/index.js"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_your_token_here"
+      }
+    }
+  }
+}

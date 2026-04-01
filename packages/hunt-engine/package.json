@@ -1,0 +1,29 @@
+{
+  "name": "@forgemcp/hunt-engine",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./bm25-weights": {
+      "types": "./dist/bm25-weights.d.ts",
+      "import": "./dist/bm25-weights.js"
+    },
+    "./retrieval-scorer": {
+      "types": "./dist/retrieval-scorer.d.ts",
+      "import": "./dist/retrieval-scorer.js"
+    }
+  },
+  "scripts": { "build": "tsc", "test": "vitest run", "lint": "tsc --noEmit" },
+  "dependencies": {
+    "@forgemcp/core": "workspace:*",
+    "@forgemcp/data-sources": "workspace:*",
+    "@forgemcp/ast-intelligence": "workspace:*",
+    "@forgemcp/db": "workspace:*"
+  }
+}

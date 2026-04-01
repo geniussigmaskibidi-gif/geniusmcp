@@ -1,0 +1,38 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDir": ".",
+    "outDir": "dist",
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "paths": {
+      "@forgemcp/core": ["./packages/core/src/index.ts"],
+      "@forgemcp/core/*": ["./packages/core/src/*"],
+      "@forgemcp/db": ["./packages/db/src/index.ts"],
+      "@forgemcp/db/*": ["./packages/db/src/*"],
+      "@forgemcp/ast-intelligence": ["./packages/ast-intelligence/src/index.ts"],
+      "@forgemcp/ast-intelligence/*": ["./packages/ast-intelligence/src/*"],
+      "@forgemcp/repo-memory": ["./packages/repo-memory/src/index.ts"],
+      "@forgemcp/repo-memory/*": ["./packages/repo-memory/src/*"],
+      "@forgemcp/github-gateway": ["./packages/github-gateway/src/index.ts"],
+      "@forgemcp/github-gateway/*": ["./packages/github-gateway/src/*"],
+      "@forgemcp/importer": ["./packages/importer/src/index.ts"],
+      "@forgemcp/importer/*": ["./packages/importer/src/*"],
+      "@forgemcp/data-sources": ["./packages/data-sources/src/index.ts"],
+      "@forgemcp/data-sources/*": ["./packages/data-sources/src/*"],
+      "@forgemcp/hunt-engine": ["./packages/hunt-engine/src/index.ts"],
+      "@forgemcp/hunt-engine/*": ["./packages/hunt-engine/src/*"]
+    }
+  },
+  "include": [
+    "packages/*/src/**/*.ts",
+    "apps/*/src/**/*.ts",
+    "tests/**/*.ts",
+    "vitest.config.ts"
+  ],
+  "exclude": ["node_modules", "**/dist", "**/*.d.ts"]
+}

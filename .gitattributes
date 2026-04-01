@@ -1,0 +1,6 @@
+# Git clean/smudge filters — strip internal comments on commit,
+# keep them locally. Remote repo never sees [ForgeMCP] markers.
+*.ts filter=strip-internal
+*.tsx filter=strip-internal
+*.js filter=strip-internal
+*.md filter=strip-md

@@ -1,0 +1,15 @@
+export { openDatabase, migrateDatabase, closeDatabase, warmupDatabase, runOptimize } from "./database.js";
+export type { Database } from "./database.js";
+export { createBlobStore, createFileRefStore, createDerivationStore, hashContent } from "./blob-store.js";
+export type { BlobStore, BlobMeta, FileRefStore, DerivationStore } from "./blob-store.js";
+export { createSearchIndex } from "./search-index.js";
+export type { SearchIndex, SearchDocument, SearchResult } from "./search-index.js";
+export { simhash64, hammingDistance, isNearDuplicate } from "./simhash.js";
+export { createBlobGc, DEFAULT_GC_POLICY } from "./blob-gc.js";
+export type { GcPolicy, GcReport, ScrubReport, BlobGc } from "./blob-gc.js";
+export { planQuery, classifyQuery, extractLiterals } from "./query-planner.js";
+export type { QueryPlan, QueryClass, LanePlan, SearchLane } from "./query-planner.js";
+export { chunkFile } from "./chunker.js";
+export type { CodeChunk, ChunkKind, ChunkOptions, SymbolInfo } from "./chunker.js";
+export { createJobQueue } from "./job-queue.js";
+export type { JobQueue, Job, JobState, JobPriority, JobQueueStats } from "./job-queue.js";
